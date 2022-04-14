@@ -2,7 +2,6 @@ package com.kihei.main;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
-import java.util.*;
 
 public class Game extends Canvas implements Runnable {
 
@@ -20,10 +19,7 @@ public class Game extends Canvas implements Runnable {
 		this.addMouseListener(new MouseInput());
 		
 		display = new Display();
-		
 		w = new Window(WIDTH, HEIGHT, "Tictactoe", this);
-		
-		
 	}
 	
 	public synchronized void start() {
